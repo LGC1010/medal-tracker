@@ -7,8 +7,7 @@ const OlymPicList = ({ medal, handleDelete }) => {
             <li>{medal.gold}</li>
             <li>{medal.silver}</li>
             <li>{medal.bronze}</li>
-            <li><Button onClick={() => {handleDelete(medal.id);}}>삭제</Button>
-            </li>
+            <li><Button className="btn_del" onClick={() => {handleDelete(medal.id);}}>삭제</Button></li>
         </ul>
     );
 };

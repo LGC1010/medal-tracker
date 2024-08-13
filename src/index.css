@@ -3,10 +3,21 @@ body{
   margin: 0;
   background: skyblue;
 }
+
 button{
   cursor: pointer;
   border: none;
   background: #fff;
+}
+
+.btn_del{
+  width: 120px;
+  background-color: red;
+  padding: 10px 5px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
 }
 
 ul,
@@ -75,8 +86,21 @@ h1{
   border: 1px solid #ddd;
   display: flex;
 }
+.medal_total + .medal_total{
+  margin-top: 0;
+  border-top: none;
+}
 .medal_total li{
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex: 1;
   padding: 20px;
+  border-right: 1px solid #ddd;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+}
+.medal_total li:last-child{
+  border: none;
 }

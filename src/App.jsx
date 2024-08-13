@@ -10,7 +10,7 @@ function App() {
   const [bronze, setValueBronze] = useState(0);
 
   const olymPic = {
-    id: medals.length + 1,
+    id: new Date().getTime(),
     country: countryValue,
     gold: gold,
     silver: silver,
@@ -44,6 +44,7 @@ function App() {
     let newCountries = medals.map((list)=>{
       if(list.country == updateMedalList.country){
         return {
+          id: updateMedalList.id,
           country: countryValue,
           gold: gold,
           silver: silver,
@@ -53,11 +54,16 @@ function App() {
         return list;
       }
     })
-    setMedal(newCountries)
-    setValuecountry('');
-    setValueGold(0);
-    setValueSilver(0);
-    setValueBronze(0);
+    if(countryValue==''){
+      alert('국가를 입력해주세요');
+    }else if(countryValue == updateMedalList.country){
+      alert('수정완료')
+      setMedal(newCountries)
+      setValuecountry('');
+      setValueGold(0);
+      setValueSilver(0);
+      setValueBronze(0);
+    }
   }
 
   return (
@@ -94,8 +100,4 @@ function App() {
   );
 }
 
-
-
-
-
-export default App
+export default App;
