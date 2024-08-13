@@ -1,0 +1,82 @@
+body{
+  padding: 0;
+  margin: 0;
+  background: skyblue;
+}
+button{
+  cursor: pointer;
+  border: none;
+  background: #fff;
+}
+
+ul,
+ol{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#root{
+  margin: 0 20px;
+}
+
+.container{
+  padding: 20px;
+  max-width: 1200px;
+  min-width: 600px;
+  margin: 30px auto;
+  min-height: 200px;
+  background: #fff;
+  border-radius: 5px;
+}
+
+h1{
+  text-align: center;
+  margin: 20px 0;
+}
+
+.input_group{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.input_group .inp_box{
+  display: flex;
+  width: calc(20% - 20px);
+  flex-direction: column;
+  text-align: center;
+  margin-right: 20px;
+}
+
+.input_group .inp_box input{
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+}
+.input_group .inp_box label{
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+.btn_box{
+  display: flex;
+  width: 20%;
+  text-align: center;
+}
+.btn_box button{
+  background: skyblue;
+  padding: 15px;
+  flex: 1;
+  font-weight: 700;
+}
+.medal_box{
+  margin-top: 20px;
+}
+.medal_total{
+  margin-top: 20px;
+  border: 1px solid #ddd;
+  display: flex;
+}
+.medal_total li{
+  text-align: center;
+  flex: 1;
+  padding: 20px;
+}
